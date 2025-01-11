@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <link rel="icon" type="image/medic.ico" href="medic.ico">
+  </head>
+<body>
+
+<div class="parDiv">
+<h1 style="font: Arial;"> Heal the Scout ?</h1>   
+</div>
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "not healing.png"
+  } else {
+    pic = "Healing.png"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<div class="myDiv"> 
+
+<img id="myImage" src="not healing.png" width="auto" height="auto" >
+</div>
+
+<div class="wrapper">
+<p>
+<button type="button" onclick="light(1)">Healing</button>
+<button type="button" onclick="light(0)">No heals for you!</button>
+</p>
+
+</div>
+</body>
+
+<style> 
+body { 
+  background-image: url(map.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parDiv { 
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: -10%;
+}
+.myDiv { 
+ margin-left: 30%;
+ margin-right: 20%;
+ margin-bottom: 20%;
+ margin-top: 20%;
+}
+
+.wrapper { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50%;
+}
+
+
+
+
+</style>
+</html>
+
